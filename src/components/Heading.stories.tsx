@@ -26,12 +26,6 @@ export const Small: StoryObj<HeadingProps> = {
     }
 }
 
-export const Medium: StoryObj<HeadingProps> = {
-    args: {
-        size: 'md',
-    }
-}
-
 export const Large: StoryObj<HeadingProps> = {
     args: {
         size: 'lg',
@@ -50,6 +44,12 @@ export const CustomComponent: StoryObj<HeadingProps> = {
             table: {
                 disable: true,
             }
+        },
+        asChild: {
+            table: {
+                disable: true,
+            }
         }
+
     }
 }
